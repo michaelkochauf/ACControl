@@ -1,0 +1,39 @@
+<div class="center">
+    <mat-form-field class="example-full-width">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Username" [(ngModel)]="username" >
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Username</mat-label>
+      <input matInput placeholder="Username" type="password" [(ngModel)]="password" >
+    </mat-form-field>
+
+    <div class="error" *ngIf="hasError">
+      {{errorMessage}}
+    </div><br>
+
+    
+
+    <mat-form-field appearance="fill" class="example-full-width">
+      <mat-label>Raum</mat-label>
+      <mat-select [(ngModel)]="acId">
+        <mat-option *ngFor="let room of rooms" [value]="room.value">
+          {{room.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="row" style="width: 100%;">
+      <div class="col-5">
+        <button mat-raised-button class="mybuttonbase mybutton" (click)="turnOn()">On</button>
+      </div>
+      <div class="col-5">
+        <button mat-raised-button class="mybuttonbase" color="warn" (click)="turnOff()">Off</button>
+      </div>
+      <div class="col-2">
+        <mat-spinner *ngIf="isLoading" mode="indeterminate" diameter="50" ></mat-spinner>
+        <mat-icon *ngIf="isLoadingSuccessful" class="successIcon" >done</mat-icon>
+      </div>
+    </div>
+
+</div>

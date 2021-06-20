@@ -1,0 +1,72 @@
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+
+.center
+{
+    margin: auto;
+    width: 70%;
+    padding-top: 100px;
+}
+
+section {
+    display: table;
+  }
+  
+  .example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+  }
+  
+  .example-button-row {
+    display: table-cell;
+    width: 490px;
+  }
+  
+  .example-button-row .mat-button-base {
+    margin: 8px 8px 8px 0;
+  }
+  
+  .example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+  }
+
+  .mybutton{
+    background-color: #43d543;
+  }
+
+.mytable{
+    width: 100%;
+}
+
+.mybuttonbase{
+    height: 60px;
+    width: 100%;
+}
+
+.error{
+    color: #f44336;
+}
+
+.successIcon
+{
+    color: #43d543;
+    font-size: 50px;
+}
