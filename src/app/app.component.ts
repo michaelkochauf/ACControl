@@ -59,7 +59,7 @@ export class AppComponent implements OnInit {
   private send(value: boolean)
   {
     this.isLoading = true;
-    let url = "http://exuberant-strong-gemini.glitch.me/status/"+this.acId;
+    let url = "https://impossible-geode-mockingbird.glitch.me/status/"+this.acId;
     let body = {
       status: value,
       username: this.username,
